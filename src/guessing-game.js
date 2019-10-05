@@ -7,7 +7,7 @@ class GuessingGame {
     }
 
     guess() {
-        this.roll = Math.floor(Math.random() * (max - min)) + min;
+        this.roll =  Math.ceil((this.min + this.max) / 2);
         return this.roll;
     }
 
